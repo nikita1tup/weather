@@ -1,0 +1,173 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+.App {
+  padding-top: 64px;
+  background: -webkit-gradient(linear, left top, left bottom, from(#484B5B), color-stop(89.55%, #2C2D35));
+  background: linear-gradient(180deg, #484B5B 0%, #2C2D35 89.55%);
+  height: 100vh;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  color: white;
+}
+
+.header, .content {
+  width: 940px;
+  margin: auto;
+  position: relative;
+}
+
+.location {
+  margin-bottom: 30px;
+  height: 40px;
+  display: inline-block;
+}
+
+.location .currentLocation {
+  cursor: pointer;
+}
+
+.location .currentLocation .city {
+  font-style: normal;
+  font-weight: 800;
+  font-size: 21px;
+  line-height: 25px;
+}
+
+.location .currentLocation .country {
+  font-weight: 300;
+  font-size: 21px;
+  line-height: 25px;
+}
+
+.location .currentLocation .changeLocation {
+  font-size: 14px;
+  line-height: 14px;
+  text-decoration: underline;
+  color: #9A9A9A;
+  margin-top: 1px;
+}
+
+.location .locationInputForm .locationInput {
+  height: 25px;
+  background: none;
+  border: none;
+  font-weight: 400;
+  font-size: 21px;
+  line-height: 25px;
+  color: white;
+  outline: none;
+}
+
+.dateSelector {
+  position: absolute;
+  top: 16px;
+  right: 32px;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+.dateSelector .dateTimeString {
+  line-height: 24px;
+  vertical-align: top;
+  margin: 0 8px;
+  font-size: 18px;
+}
+
+.dateSelector .dateTimeArrow {
+  cursor: pointer;
+}
+
+.content-table {
+  width: 980px;
+  table-layout: fixed;
+  border-collapse: separate;
+  border-spacing: 20px;
+  margin: -20px;
+}
+
+.content-table tr {
+  height: 94px;
+}
+
+.content-table td {
+  height: 100%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.table-cell-border {
+  border: 1px solid #5D606A;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 10px;
+  padding: 0 16px;
+  height: 100%;
+  width: 100%;
+}
+
+.temperature-cell {
+  text-align: center;
+}
+
+.temperature-cell svg {
+  display: inline-block;
+  top: 13px;
+  position: relative;
+  height: 64px;
+  width: 64px;
+}
+
+.temperature-cell .number {
+  line-height: 94px;
+  font-weight: 300;
+  font-size: 59px;
+}
+
+.temperature-cell .celsius {
+  font-weight: 500;
+  font-size: 28px;
+  line-height: 51px;
+  color: #5D6972;
+  vertical-align: top;
+}
+
+.icon-cell {
+  font-family: 'Roboto', sans-serif;
+  padding-top: 21px;
+}
+
+.icon-cell .value {
+  font-size: 26px;
+  line-height: 30px;
+  letter-spacing: -0.05em;
+}
+
+.icon-cell .sub {
+  margin-top: 6px;
+}
+
+.icon-cell .sub * {
+  display: inline-block;
+  vertical-align: top;
+}
+
+.icon-cell .sub span {
+  font-size: 13px;
+  line-height: 21px;
+}
+
+.charts h5 {
+  font-size: 18px;
+  line-height: 22px;
+  margin: 14px 0;
+}
+
+.charts .tempChart > svg {
+  overflow: visible;
+}
+
+.charts .rainChanceTitle {
+  margin-top: 24px;
+}
